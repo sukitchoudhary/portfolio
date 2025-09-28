@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sukit | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 70px 20px;
+      background: rgba(0,0,0,0.6);
+      border-bottom: 2px solid #00ff88;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      color: #00ff88;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    nav {
+      margin-top: 25px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #00c3ff;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ff88;
+    }
+
+    /* Section */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #00ff88;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* About */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      text-align: left;
+    }
+
+    .about img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      border: 5px solid #00c3ff;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0, 255, 136, 0.4);
+    }
+
+    .about div {
+      flex: 1;
+      min-width: 280px;
+      color: #ddd;
+      font-size: 1.1rem;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .project-card h3 {
+      color: #00c3ff;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0, 255, 136, 0.3);
+    }
+
+    /* Belief */
+    .belief {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .belief h3 {
+      color: #00ff88;
+      margin-bottom: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.4rem;
+    }
+
+    .belief p {
+      color: #ddd;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Contact */
+    #contact p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin: 8px 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    #contact a {
+      color: #00c3ff;
+      transition: color 0.3s;
+    }
+
+    #contact a:hover {
+      color: #00ff88;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.8);
+      color: #aaa;
+      margin-top: 50px;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Sukit</h1>
+    <p>B.Tech CSE Student | Web Developer | Problem Solver</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#belief">Belief</a>
+      <a href="#contact">Contact</a>
+      <a href="sukiteducation.html">Education</a>
+      <a href="sukithobby.html">Hobby</a>
+    </nav>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="sukit.jpeg" alt="Profile Photo">
+      <div>
+        <p>Hi, I’m Sukit Choudhary, a second-year B.Tech Computer Science and Engineering student at IIIT Manipur with a strong passion for technology and problem-solving. My journey in computer science began with curiosity about how software shapes the modern world, and it has grown into a drive to create meaningful digital solutions.
+
+I enjoy coding in C++, Java, and Python, with a particular interest in Data Structures, Algorithms, and Web Development. Beyond academics, I actively practice building projects like portfolio websites, interactive web apps, and fun games, which help me learn by doing.
+
+I believe in continuous growth, where every challenge is an opportunity to explore, learn, and innovate. Apart from coding, I also enjoy hobbies like badminton, chess, and traveling, which keep me balanced and creative. My long-term goal is to contribute to impactful projects in software development while constantly pushing my boundaries.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>💻 Portfolio Website</h3>
+        <p>A personal portfolio website built with HTML, CSS, and JS to showcase my skills and projects.</p>
+      </div>
+      <div class="project-card">
+        <h3>⚡ DSA Practice Codes</h3>
+        <p>A collection of optimized solutions in C++ and Java, with clear explanations for interview prep.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌐 Mini Apps/Games</h3>
+        <p> TwinHunt Game: It is a fun memory card game where players flip cards to match emoji pairs. Each correct match scores a point, while mismatches flip back, testing focus and recall. With randomized shuffling and simple gameplay, it offers an engaging way to improve memory while enjoying interactive challenges. </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Belief -->
+  <section id="belief">
+    <h2>My Beliefs</h2>
+    <div class="belief">
+      <h3>🌱 Growth</h3>
+      <p>Every day is an opportunity to learn and improve.</p>
+      <h3>💡 Innovation</h3>
+      <p>Technology should solve real problems with simplicity and beauty.</p>
+      <h3>🤝 Teamwork</h3>
+      <p>Collaboration turns good ideas into great solutions.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: <a href="sukitjeewan@gmail.com">sukitjeewan@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/sukitchoudhary" target="_blank">github.com/sukitchoudhary</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sukit-choudhary-962a43325" target="_blank">linkedin.com/in/sukit-choudhary</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sukit | Built with ❤️ using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
+
